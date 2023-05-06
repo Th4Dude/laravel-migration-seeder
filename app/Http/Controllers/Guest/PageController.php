@@ -17,7 +17,7 @@ class PageController extends Controller
 
         return view('home', compact('trains','todaysTrains'));
       }
-      
+
       private function getTodaysTrains()
       {
           return Train::whereDate('departure_time', Carbon::today())->get();
