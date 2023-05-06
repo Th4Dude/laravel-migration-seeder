@@ -7,7 +7,9 @@
          @vite('resources/js/app.js')
     </head>
     <body>
+
         <h1 class="text-center">Treni</h1>
+
         <table class="table">
             <thead>
               <tr class="bg-success">
@@ -39,11 +41,10 @@
                   </tr>
                 @endforeach
             </tbody>
-          </table>
+        </table>
 
-
-          <h1 class="text-center">Treni in partenza oggi</h1>
-          
+        <h1 class="text-center">Treni in partenza oggi</h1>
+        
         <table class="table">
             <thead>
               <tr class="bg-success">
@@ -72,7 +73,10 @@
                     <td>{{$train['carriages_number']}}</td>
                     <td>{{$train['on_time']== 0 ? 'no':'yes'}}</td>
                     <td>{{$train['cancelled']== 0 ? 'no':'yes'}}</td>
-                  </tr>
+                </tr>
                 @endforeach
+        </table>
+
     </body>
+    
 </html>
